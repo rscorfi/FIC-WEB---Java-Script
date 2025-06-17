@@ -1,18 +1,26 @@
 // 10. Crie um programa que gere a sequência de "Fibonacci" até o n-ésimo termo, onde n é informado pelo usuário. É uma sequência de números inteiros, começando por 0 e 1. Os números subsequentes corresponde a soma dos dois números anteriores. Ex: 0,1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89...
 
-
-// não está pronto
-
 let n = Number(prompt('Informe a quantidade de termos de Fibonacci:'))
 let n1 = 0
 let n2 = 1
-console.log(n1)
-console.log(n2)
+let n3 = 0
 
 for (let i = 1; i < n; i++) {
-    n1 = n2
     console.log(n1)
-    n2 = n1 + n2
-    console.log(n2)
-
+    n3 = n1 + n2
+    n1 = n2
+    n2 = n3
 }
+
+// n = int(input("Informe a quantidade de termos de Fibonacci:"))
+// n1 = 0
+// n2 = 1
+// n3 = 0
+// i = 0
+// a = 0
+
+// for i in range (n):
+//     print (n1)
+//     n3 = n1 + n2
+//     n1 = n2
+//     n2 = n3
