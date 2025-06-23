@@ -9,11 +9,11 @@ let nro
 for (let i = 1; i <= qtde; i++) {
     nro = Number(prompt(`Informe o ${i}º número`))
     if (nro === 0) {
-        zeros = zeros + 1
+        zeros++
     } else if (nro < 0) {
-        negativos = negativos + 1
+        negativos++
     } else {
-        positivos = positivos + 1
+        positivos++
     }
 }
 
