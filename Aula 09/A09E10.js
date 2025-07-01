@@ -3,7 +3,7 @@
 let opcao
 
 while (opcao !== 3) {
-    opcao = Number(prompt ('Informe uma opção: 1 - Olá, 2 - Tchau, 3 - Sair'))
+    opcao = Number(prompt ('Informe uma opção: \n1 - Olá \n2 - Tchau \n3 - Sair'))
 
     switch (opcao) {
         case 1:
@@ -16,7 +16,11 @@ while (opcao !== 3) {
             break;
         case 3:
             alert ('Sair');
-            console.log ('Sair');
+            console.log ('Saindo....');
+            break;
+        default:
+            alert ('Opção inválida');
+            console.log ('Opção inválida');
             break;
     }
 }
